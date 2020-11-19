@@ -116,3 +116,10 @@ header .nav-links li {
 header .nav-links li:last-child {
   margin-right: 0;
 }
+
+/* welcome page */
+.welcome {
+  text-align: center;
+  margin-top: 80px;
+  line-height: 50px;
+}

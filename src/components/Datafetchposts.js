@@ -4,6 +4,7 @@ import React, {
   useEffect,
   useContext,
   useRef,
+  useCallback,
 } from "react";
 import axios from "axios";
 import { Display, Input, Button, Title, Empha } from "./Designstyled";
@@ -57,9 +58,9 @@ function Datafetchposts() {
       });
   }, [idButton]);
 
-  const handleClick = () => {
+  const handleClick = useCallback(() => {
     setIdButton(id);
-  };
+  }, [id]);
 
   return (
     <div>
